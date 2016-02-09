@@ -1,0 +1,83 @@
+body { 
+	font-family: 'Montserrat', Verdana, sans-serif; 
+	color: #999; 
+	background-color: #fff; 
+}
+
+p { 
+	font-family: 'Noto Serif', Georgia, sans-serif; font-weight: 300; 
+	color: #666; 
+	font-size: 22px; 
+	line-height: 38px; 
+	padding: 15px 0;
+}
+
+a { 
+	text-decoration: none; 
+	color: #E4701E;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}
+
+h1 { 
+	font-size: 1.25em; 
+}
+
+header {
+	border-bottom: 1px dotted #CCC;
+}
+header h4 {
+	font-size: .825em;
+	text-transform: uppercase;
+	color: #333;
+}
+header h4 span {
+	color: #E4701E;
+}
+
+.container { 
+	width: 960px; 
+	display: block; 
+	margin: 0 auto; 
+	padding: 15px 0;
+}
+
+.projects { 
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: wrap; 
+	justify-content: flex-start; 
+}
+
+.project { 
+	margin: 24px; 
+}
+
+img.project-thumbnail {
+	height: 240px; width: 240px; 
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%); 
+}
+
+img.project-thumbnail:hover { 
+	-webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+	filter: grayscale(0%); 
+}		
+
+h3 { 
+	color: #999; 
+	margin: 15px 0 0 0; 
+}
+
+h3:hover { 
+	color: #E4701E; 
+}
+
+.project-label { 
+	font-size: 12px; 
+	font-style: italic; 
+	margin: 0; 
+	line-height: 24px;
+}
