@@ -8,8 +8,9 @@
 		font-family: 'Noto Serif', Georgia, sans-serif; font-weight: 300; 
 		color: #666; 
 		font-size: 1.375em; 
-		line-height: 1.375em; 
-		padding: 1em 0;
+		line-height: 1.725em; 
+		padding: .375em 0;
+		width: 45em;
 	}
 
 	a { 
@@ -27,6 +28,8 @@
 
 	header {
 		border-bottom: 1px dotted #CCC;
+		display: flex; 
+		justify-content: space-between;
 	}
 	header h4 {
 		font-size: .825em;
@@ -39,9 +42,10 @@
 
 	.container { 
 		width: 54em; 
-		display: block; 
+		display: flex; 
 		margin: 0 auto; 
 		padding: 1em 0;
+		flex-wrap: wrap;
 	}
 
 	.projects { 
@@ -53,6 +57,7 @@
 
 	.project { 
 		margin: 1.5em; 
+		width: 15em;
 	}
 
 	img.project-thumbnail {
@@ -65,6 +70,10 @@
 		-webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
 		filter: grayscale(0%); 
 	}		
+
+	h2 {
+		width: 45em;
+	}
 
 	h3 { 
 		color: #999; 
@@ -84,10 +93,10 @@
 
 
 
-@media (min-width: 20em) { 
-	.container { }
+/* @media (width: 20em) { 
+	.container { width: 18em; }
 }
 @media (min-width: 54em) {
 	.container { }
-}
+}*/
 
