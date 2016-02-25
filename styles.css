@@ -8,7 +8,6 @@ body {
 	background-color: #fff; 
 	margin: 0;
 }
-
 html, body {
   margin:0;
 }
@@ -25,12 +24,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .container-fluid {
 	width: 100%;
-
 }
 .main-nav {
 	border-bottom: 1px dotted #CCC;
 }
-
 header.container {
 	max-width: 59em;
 	padding: 2em 1em;
@@ -50,7 +47,6 @@ header h2 {
 	text-transform: uppercase;
 	color: #555;
 	margin: 0;
-
 }
 header h2 span {
 	color: #E4701E;
@@ -60,7 +56,6 @@ header h2 span {
 	height: 3em;
 	width: 3em;
 }
-
 .summary h3, .summary p {
 	padding: 0 1em;
 }
@@ -84,43 +79,34 @@ a {
 a:hover {
 	color: #E4701E;
 }
-
-
-
 .projects ul { 
 	display: flex; 
-	flex-direction: row; 
-	flex-wrap: wrap; 
+	flex-flow: row wrap; 
 	justify-content: flex-start; 
 	list-style: none;
 	margin: 0; padding: 0;
 }
-
-.project { 
-	margin: 1.5em; 
-	width: 15em;
+.project {
+	width: calc(33.3% - 3em);
+	margin: 1.5em;
 }
-
 .project a {
 	border-bottom: none;
 }
-
 img.project-thumbnail {
-	height: 15em; width: 15em;
+	width: 100%;
 	border: 1px solid rgba(0,0,0,.1);
 	-webkit-filter: grayscale(100%);
-	-webkit-transition: .2s ease-in-out; /* Chrome, Safari, Opera */
+	-webkit-transition: .2s ease-in-out; 
 	filter: grayscale(100%);
 	transition: .2s ease-in-out; 
 }
-
 img.project-thumbnail:hover { 
 	-webkit-filter: grayscale(0%);
-	-webkit-transition: .2s ease-in-out; /* Chrome, Safari, Opera */
+	-webkit-transition: .2s ease-in-out; 
 	filter: grayscale(0%); 
 	transition: .2s ease-in-out;
 }		
-
 .project h4 {
 	font-size: 1.125em; 
 	color: #999; 
@@ -133,12 +119,7 @@ img.project-thumbnail:hover {
 	line-height: 1.5em;
 }
 
-
-
-/* @media (width: 20em) { 
-.container { width: 18em; }
+@media (min-width: 15em) and (max-width: 53em) {
+.project { width: calc(50% - 3em);}
 }
-@media (min-width: 54em) {
-.container { }
-}*/
 
