@@ -1,3 +1,13 @@
+/*
+font-family: 'Amiri', serif;
+font-family: 'Crimson Text', serif;
+font-family: 'Droid Serif', serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'PT Serif', serif;
+font-family: 'Radley', serif;
+font-family: 'Rosarivo', serif;
+*/
+
 /** {
 	background-color: rgba(255,0,0,0.1);
 }*/
@@ -45,7 +55,7 @@ header h1 {
 header h2 {
 	font-size: .825em;
 	text-transform: uppercase;
-	color: #555;
+	color: #444;
 	margin: 0;
 }
 header h2 span {
@@ -64,9 +74,9 @@ h3 {
 	width: 100%;
 }
 p { 
-	font-family: 'Noto Serif', Georgia, sans-serif; font-weight: 300; 
-	color: #666; 
-	font-size: 1.375em; 
+	font-family: 'Amiri', Georgia, sans-serif; font-weight: 300; 
+	color: #333; 
+	font-size: 1.5em; 
 	line-height: 1.725em; 
 	margin: 0.875em 0;
 	width: 100%;
@@ -113,13 +123,105 @@ img.project-thumbnail:hover {
 	margin: 1em 0 .25em 0; 
 }
 .project-label { 
-	font-size: .75em; 
+	font-size: 1em; 
 	font-style: italic; 
 	margin: 0; 
 	line-height: 1.5em;
 }
 
-@media (min-width: 15em) and (max-width: 53em) {
-.project { width: calc(50% - 3em);}
+/*project-pages*/
+
+.project-summary h3 {
+	font-family: 'Amiri', Georgia, sans-serif; 
+	font-weight: 700;
+	font-size: 2.5em;
+	line-height: 1.125em;
+	color: #333;
+	text-align: center; 
+	margin: 1em .625em 0;
+}
+.project-summary h4 {
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	margin: 1em 1.5em 4em;	
+}
+.project-summary section {
+	width: calc(50% - 3em);
+	margin: 0 1.5em; 
+}
+.project-summary section h5 {
+	font-size: .875em;
+	text-transform: uppercase;
+	color: #E4701E;
+	border-bottom: 1px dotted #CCC;
+	padding-bottom: 1em;
+}
+.project-summary section p {
+	font-size: 1.2em;
+}
+.project-gallery {
+	padding: 1.5em;
+}
+.project-gallery img {
+	width: 100%; 
+	height: 100%;
+	border: 1px solid rgba(0,0,0,.1); 
+	margin-top: 1.5em;
+}
+nav.projects-navigation {
+	padding: 1.5em;
+	width: 100%;
+}
+.projects-navigation ul {
+	list-style: none;
+	margin: 0; padding: 0;
+	display: flex; 
+	flex-flow: row; 
+	justify-content: space-between; 
+}
+.projects-navigation ul li {
+
+}
+.projects-navigation a {
+	border-bottom: none;
+	display: flex;
+	flex-flow: column nowrap;
+}
+.projects-navigation ul li a span {
+
+}
+.next {
+	text-align: right;
+} 
+.nav-direction {
+	font-size: .875em; 
+	min-width: 17.5em;
+	border-bottom: 1px dotted #CCC;
+	padding-bottom: .75em;
+}
+.nav-project-title {
+	font-family: 'Amiri', Georgia, sans-serif; 
+	font-size: 1.313em;
+	color: #333;
+	padding-top: .325em; 
+	margin: 0 .5em;
+}
+.nav-project-label {
+	font-size: .75em; 
+	text-transform: uppercase;
+	color: #999;
+	margin: 0 .875em;
 }
 
+@media (min-width: 15em) and (max-width: 53em) {
+	.project {
+		width: calc(50% - 3em); 
+	}
+	.project-summary section {
+		width: calc(100% - 3em);
+	}
+	.projects-navigation ul {
+		flex-flow: column;
+	}
+}

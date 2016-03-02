@@ -9,14 +9,14 @@
 	<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic' rel='stylesheet' type='text/css'>
 
 	<link href='https://fonts.googleapis.com/css?family=Amiri:400,400italic,700,700italic|Crimson+Text:400,400italic,600,600italic,700,700italic|Droid+Serif:400,400italic,700,700italic|Libre+Baskerville:400,400italic,700|PT+Serif:400,400italic,700,700italic|Radley:400,400italic|Rosarivo:400,400italic' rel='stylesheet' type='text/css'>
-	
+
 	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
 	<link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 	<!-- Why hello there, thank you for taking a look.  -->
-		<div class="container-fluid main-nav">
+		<div class="container-fluid main-nav" id="top">
 			<header class="container">
 			<img src="img/nevena-logo.svg" alt="Logo" class="logo">
 				<div>
@@ -27,23 +27,50 @@
 		</div>
 
 
-	<section class="container summary">
-		<h3>Hi, I'm Nevena and I sometimes think too much.</h3>
-		<p>I'm a Seattle-based multidisciplinary designer. I'm just as excited about simplifying user workflows and alieving pain points as I am about playing around with any recent HTML and CSS developments.</p>
-		<p>Last seen at <a href="http://zantler.com/" target="_blank">Zantler</a> as UI/UX designer for the web-based e-commerce app <a href="http://shoppost.com/" target="_blank.">Shoppost</a>. <a href="http://seattlecentralcreativeacademy.com/">Seattle Central Creative Academy</a> graduate.</p>
-		<p>Recent work will be up shortly. <br/> 
-		   Select school work below.</p>
+	<section class="container project-summary">
+		<h3>Dandelion Wine</h3>
+		<h4>Book Design</h4>
+		<section>
+			<h5>Challenge</h5>
+			<p>"Dandelion Wine" is one of Bradbury's masterpieces, and one of his most personal works. This new edition presented the challenge of formatting the entire text block and producing a book from start to finish.</p>
+		</section>
+		<section>
+			<h5>Solution</h5>
+			<p>Layouts and typefaces were carefully selected to resemble a book from the era when the story takes place. Each chapter received an illustration done in pen and ink and then digitally colored; the book was finished with letterpressed bookcloth and a more modern dust jacket.</p>
+		</section>
+		<div class="project-gallery">
+			<img src="img/dandelion-wine-1.jpg" width="835px" height="639px" >
+			<img src="img/dandelion-wine-2.jpg" width="835px" height="1082px" >
+			<img src="img/dandelion-wine-3.jpg" width="835px" height="1000px" >
+			<img src="img/dandelion-wine-4.jpg" width="835px" height="1080px" >
+			<img src="img/dandelion-wine-5.jpg" width="835px" height="687px" >
+			<img src="img/dandelion-wine-6.jpg" width="835px" height="587px" >
+			<img src="img/dandelion-wine-7.jpg" width="835px" height="627px" >
+			<img src="img/dandelion-wine-8.jpg" width="835px" height="1079px" >
+			<img src="img/dandelion-wine-9.jpg" width="835px" height="633px" >
+		</div>
+		<nav class="projects-navigation">
+			<ul>
+				<li class="previous">
+					<a href="">
+						<span class="nav-direction">&laquo; previous</span>
+						<span class="nav-project-title">Title of previous project</span>
+						<span class="nav-project-label">Project label</span>
+					</a>
+				</li>
+				<li class="next">
+					<a href="">
+						<span class="nav-direction">next &raquo;</span>
+						<span class="nav-project-title">Hoffman Paints</span>
+						<span class="nav-project-label">Packaging design</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
 	</section>
 
 	<section class="container projects">
 		<ul>
-			<li class="project">
-				<a href="dandelion-wine.html">
-					<img class="project-thumbnail" src="img/thumbnail-dandelion.jpg" alt="Image of book cover for Dandelion Wine">
-					<h4>Dandelion Wine</h4>
-					<p class="project-label">book design</p>
-				</a>
-			</li>
 			<li class="project">
 				<a href="#">
 					<img class="project-thumbnail" src="img/thumbnail-hoffman.jpg" alt="Image of packaging for Hoffman Paints">
