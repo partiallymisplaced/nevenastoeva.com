@@ -1,40 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Nevena Stoeva | Portfolio</title>
+	<title>Nevena Stoeva | Tea Cozy</title>
 	<link rel="icon" href="img/favicon.png" />
-	<meta name="description" content="Portfolio of Nevena Stoeva, Seattle-based UI/UX/Visual/Graphic Designer" />
-	<meta name="keywords" content="portfolio, UI designer, UX designer, user interface designer, visual designer, graphic designer"/>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic' rel='stylesheet' type='text/css'>
 
 	<link href='https://fonts.googleapis.com/css?family=Amiri:400,400italic,700,700italic|Crimson+Text:400,400italic,600,600italic,700,700italic|Droid+Serif:400,400italic,700,700italic|Libre+Baskerville:400,400italic,700|PT+Serif:400,400italic,700,700italic|Radley:400,400italic|Rosarivo:400,400italic' rel='stylesheet' type='text/css'>
-	
+
 	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
 	<link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 	<!-- Why hello there, thank you for taking a look.  -->
-		<div class="container-fluid main-nav">
-			<header class="container">
-			<a href="index.html">	
-				<img src="img/nevena-logo.svg" alt="Nevena Stoeva logo" class="logo">
-				<div>
-					<h1>Nevena Stoeva</h1>
-					<h2>UI <span class="orange">&bullet;</span> UX <span class="orange">&bullet;</span> Visual <span class="orange">&bullet;</span> Graphic Designer</h2>
-				</div>
-			</a>
-			</header>
+	<div class="container-fluid main-nav" id="top">
+		<header class="container">
+		<a href="index.html">	
+			<img src="img/nevena-logo.svg" alt="Nevena Stoeva logo" class="logo">
+			<div>
+				<h1>Nevena Stoeva</h1>
+				<h2>UI <span class="orange">&bullet;</span> UX <span class="orange">&bullet;</span> Visual <span class="orange">&bullet;</span> Graphic Designer</h2>
+			</div>
+		</a>
+		</header>
+	</div>
+
+	<section class="container project-summary">
+		<h3>Tea Cozy</h3>
+		<h4>Identity</h4>
+		<section>
+			<h5>Challenge</h5>
+			<p>The Tea Cozy is one of those places where you would get your portion of masterfully blended and rare imported teas - in bulk. And, if you have the time, you could take a seat and enjoy a quiet conversation with a friend over a cup of tea - the one you always wanted to try, just to make sure it's the one you want to take home. The friendly owners would be more than glad to give you helpful little tips or recommend something new - after all, they have created the unique blends themselves.</p>
+		</section>
+		<section>
+			<h5>Solution</h5>
+			<p>A distinct, playful logo was coined to convey the warm, cozy feeling of being in the store or just savouring a good cup of tea. Several cheerful patterns are there to give the customer a choice in which business card they'll take the same way they choose their tea. The custom stationery means to leave a lasting impression when the owners need to send a letter, and the customizable labels for the reusable pouches and tins have room to write down everything you need to know but you don't need to remember.</p>
+		</section>
+		<div class="project-gallery">
+			<img src="img/tea-cozy-1.jpg" alt="Tea Cozy identity suite - envelope front and business cards variety">
+			<img src="img/tea-cozy-2.jpg" alt="Tea Cozy identity suite - inside of envelope, letterhead, and business cards variety">
+			<img src="img/tea-cozy-3.jpg" alt="Tea Cozy packaging - stickers applied to tin and resealable foil pouch">
+			<img src="img/tea-cozy-4.jpg" alt="Tea Cozy packaging - stickers variety applied to resealable foil pouches">
+			<img src="img/tea-cozy-5.jpg" alt="Tea Cozy packaging - custom printed paper bag, stickers for tin and resealable foil pouch">
 		</div>
-
-
-	<section class="container summary">
-		<h3>Hi, I'm Nevena and I sometimes think too much.</h3>
-		<p>I'm a Seattle-based multidisciplinary designer. I'm just as excited about simplifying user workflows and alieving pain points as I am about playing around with any recent HTML and CSS developments.</p>
-		<p>Last seen at <a href="http://zantler.com/" target="_blank">Zantler</a> as UI/UX designer for the web-based e-commerce app <a href="http://shoppost.com/" target="_blank.">Shoppost</a>. <a href="http://seattlecentralcreativeacademy.com/">Seattle Central Creative Academy</a> graduate.</p>
-		<p>Recent work will be up shortly. <br/> 
-		   Select school and personal work below.</p>
+		<nav class="projects-navigation">
+			<ul>
+				<li class="previous">
+					<a href="ludlow.html">
+						<span class="nav-direction">&laquo; previous</span>
+						<span class="nav-project-title">Mrs. Ludlow's Tea</span>
+						<span class="nav-project-label">Packaging Design</span>
+					</a>
+				</li>
+				<li class="next">
+					<a href="penair.html">
+						<span class="nav-direction">next &raquo;</span>
+						<span class="nav-project-title">PenAir</span>
+						<span class="nav-project-label">Identity</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
 	</section>
 
 	<section class="container projects">
@@ -60,7 +87,7 @@
 					<p class="project-label">packaging design</p>
 				</a>
 			</li>
-			<li class="project">
+			<li class="project hidden">
 				<a href="tea-cozy.html">
 					<img class="project-thumbnail" src="img/thumbnail-tea-cozy.jpg" alt="Project thumbnail: Tea Cozy, identity">
 					<h4>Tea Cozy</h4>

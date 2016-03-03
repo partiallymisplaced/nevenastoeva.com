@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Nevena Stoeva | Portfolio</title>
+	<title>Nevena Stoeva | Ivo Stoev</title>
 	<link rel="icon" href="img/favicon.png" />
-	<meta name="description" content="Portfolio of Nevena Stoeva, Seattle-based UI/UX/Visual/Graphic Designer" />
-	<meta name="keywords" content="portfolio, UI designer, UX designer, user interface designer, visual designer, graphic designer"/>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic' rel='stylesheet' type='text/css'>
 
 	<link href='https://fonts.googleapis.com/css?family=Amiri:400,400italic,700,700italic|Crimson+Text:400,400italic,600,600italic,700,700italic|Droid+Serif:400,400italic,700,700italic|Libre+Baskerville:400,400italic,700|PT+Serif:400,400italic,700,700italic|Radley:400,400italic|Rosarivo:400,400italic' rel='stylesheet' type='text/css'>
-	
+
 	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
 	<link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 	<!-- Why hello there, thank you for taking a look.  -->
-		<div class="container-fluid main-nav">
-			<header class="container">
-			<a href="index.html">	
-				<img src="img/nevena-logo.svg" alt="Nevena Stoeva logo" class="logo">
-				<div>
-					<h1>Nevena Stoeva</h1>
-					<h2>UI <span class="orange">&bullet;</span> UX <span class="orange">&bullet;</span> Visual <span class="orange">&bullet;</span> Graphic Designer</h2>
-				</div>
-			</a>
-			</header>
+	<div class="container-fluid main-nav" id="top">
+		<header class="container">
+		<a href="index.html">	
+			<img src="img/nevena-logo.svg" alt="Nevena Stoeva logo" class="logo">
+			<div>
+				<h1>Nevena Stoeva</h1>
+				<h2>UI <span class="orange">&bullet;</span> UX <span class="orange">&bullet;</span> Visual <span class="orange">&bullet;</span> Graphic Designer</h2>
+			</div>
+		</a>
+		</header>
+	</div>
+
+	<section class="container project-summary">
+		<h3>Ivo Stoev</h3>
+		<h4>Identity</h4>
+		<section>
+			<h5>Challenge</h5>
+			<p>Ivo is an experienced front and back end developer, and origami enthusiast. He recently moved to Seattle and needed a comprehensive resume and a simple, engaging portfolio to present the projects he has worked on when approaching (or being approached) by potential employers. While his skills are in the realm of building and maintaining databases, he did not want to compromise on the appearance of his identity.</p>
+		</section>
+		<section>
+			<h5>Solution</h5>
+			<p>For the sake of keeping it simple, the one-page interactive website uses jQuery to display each different section and present all necessary information. It also relies on embedded fonts and CSS3 to achieve visual richness while keeping the content easy to update when needed. A set of MiniCards by moo.com is most fitting to extend the playful nature of the identity and Ivo's personality. <a href="http://ivostoev.com/">view site</a></p>
+		</section>
+		<div class="project-gallery">
+			<img src="img/ivo-stoev-1.jpg" alt="Ivo Stoev's Website - About">
+			<img src="img/ivo-stoev-2.jpg" alt="Ivo Stoev's Website - Portfolio">
+			<img src="img/ivo-stoev-3.jpg" alt="Ivo Stoev's Website - Contact me">
+			<img src="img/ivo-stoev-4.jpg" alt="Ivo Stoev's business cards">
 		</div>
-
-
-	<section class="container summary">
-		<h3>Hi, I'm Nevena and I sometimes think too much.</h3>
-		<p>I'm a Seattle-based multidisciplinary designer. I'm just as excited about simplifying user workflows and alieving pain points as I am about playing around with any recent HTML and CSS developments.</p>
-		<p>Last seen at <a href="http://zantler.com/" target="_blank">Zantler</a> as UI/UX designer for the web-based e-commerce app <a href="http://shoppost.com/" target="_blank.">Shoppost</a>. <a href="http://seattlecentralcreativeacademy.com/">Seattle Central Creative Academy</a> graduate.</p>
-		<p>Recent work will be up shortly. <br/> 
-		   Select school and personal work below.</p>
+		<nav class="projects-navigation">
+			<ul>
+				<li class="previous">
+					<a href="northwest-passage.html">
+						<span class="nav-direction">&laquo; previous</span>
+						<span class="nav-project-title">Northwest Passage</span>
+						<span class="nav-project-label">Web Design</span>
+					</a>
+				</li>
+				<li class="next">
+					<a href="boast-app.html">
+						<span class="nav-direction">next &raquo;</span>
+						<span class="nav-project-title">Boast App</span>
+						<span class="nav-project-label">UI/UX Design</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
 	</section>
 
 	<section class="container projects">
@@ -81,7 +107,7 @@
 					<p class="project-label">web</p>
 				</a>
 			</li>
-			<li class="project">
+			<li class="project hidden">
 				<a href="ivo-stoev.html">
 					<img class="project-thumbnail" src="img/thumbnail-ivo.jpg" alt="Project thumbnail: Ivo Stoev, identity and web design">
 					<h4>Ivo Stoev</h4>

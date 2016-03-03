@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Nevena Stoeva | Portfolio</title>
+	<title>Nevena Stoeva | Dandelion Wine</title>
 	<link rel="icon" href="img/favicon.png" />
-	<meta name="description" content="Portfolio of Nevena Stoeva, Seattle-based UI/UX/Visual/Graphic Designer" />
-	<meta name="keywords" content="portfolio, UI designer, UX designer, user interface designer, visual designer, graphic designer"/>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic' rel='stylesheet' type='text/css'>
 
@@ -16,50 +14,51 @@
 
 <body>
 	<!-- Why hello there, thank you for taking a look.  -->
-		<div class="container-fluid main-nav" id="top">
-			<header class="container">
-			<img src="img/nevena-logo.svg" alt="Logo" class="logo">
-				<div>
-					<h1>Nevena Stoeva</h1>
-					<h2>UI <span class="orange">&bullet;</span> UX <span class="orange">&bullet;</span> Visual <span class="orange">&bullet;</span> Graphic Designer</h2>
-				</div>
-			</header>
-		</div>
-
+	<div class="container-fluid main-nav" id="top">
+		<header class="container">
+		<a href="index.html">	
+			<img src="img/nevena-logo.svg" alt="Nevena Stoeva logo" class="logo">
+			<div>
+				<h1>Nevena Stoeva</h1>
+				<h2>UI <span class="orange">&bullet;</span> UX <span class="orange">&bullet;</span> Visual <span class="orange">&bullet;</span> Graphic Designer</h2>
+			</div>
+		</a>
+		</header>
+	</div>
 
 	<section class="container project-summary">
 		<h3>Dandelion Wine</h3>
 		<h4>Book Design</h4>
 		<section>
 			<h5>Challenge</h5>
-			<p>"Dandelion Wine" is one of Bradbury's masterpieces, and one of his most personal works. This new edition presented the challenge of formatting the entire text block and producing a book from start to finish.</p>
+			<p>Dandelion Wine is one of Bradbury's masterpieces, and one of his most personal works. This new edition presented the challenge of formatting the entire text block and producing a book from start to finish.</p>
 		</section>
 		<section>
 			<h5>Solution</h5>
 			<p>Layouts and typefaces were carefully selected to resemble a book from the era when the story takes place. Each chapter received an illustration done in pen and ink and then digitally colored; the book was finished with letterpressed bookcloth and a more modern dust jacket.</p>
 		</section>
 		<div class="project-gallery">
-			<img src="img/dandelion-wine-1.jpg" width="835px" height="639px" >
-			<img src="img/dandelion-wine-2.jpg" width="835px" height="1082px" >
-			<img src="img/dandelion-wine-3.jpg" width="835px" height="1000px" >
-			<img src="img/dandelion-wine-4.jpg" width="835px" height="1080px" >
-			<img src="img/dandelion-wine-5.jpg" width="835px" height="687px" >
-			<img src="img/dandelion-wine-6.jpg" width="835px" height="587px" >
-			<img src="img/dandelion-wine-7.jpg" width="835px" height="627px" >
-			<img src="img/dandelion-wine-8.jpg" width="835px" height="1079px" >
-			<img src="img/dandelion-wine-9.jpg" width="835px" height="633px" >
+			<img src="img/dandelion-wine-1.jpg" alt="Dandelion Wine book cover">
+			<img src="img/dandelion-wine-2.jpg" alt="Dandelion Wine book standing upright">
+			<img src="img/dandelion-wine-3.jpg" alt="Dandelion Wine book standing upright showing front and back">
+			<img src="img/dandelion-wine-4.jpg" alt="Dandelion Wine book back cover">
+			<img src="img/dandelion-wine-5.jpg" alt="Dandelion Wine dust jacket front flap">
+			<img src="img/dandelion-wine-6.jpg" alt="Dandelion Wine chapter illustration">
+			<img src="img/dandelion-wine-7.jpg" alt="Dandelion Wine page">
+			<img src="img/dandelion-wine-8.jpg" alt="Dandelion Wine dust jacket back flap">
+			<img src="img/dandelion-wine-9.jpg" alt="Dandelion Wine letterpressed book cloth">
 		</div>
 		<nav class="projects-navigation">
 			<ul>
 				<li class="previous">
 					<a href="">
-						<span class="nav-direction">&laquo; previous</span>
-						<span class="nav-project-title">Title of previous project</span>
-						<span class="nav-project-label">Project label</span>
+						<span class="nav-direction hidden">&laquo; previous</span>
+						<span class="nav-project-title hidden">Project title</span>
+						<span class="nav-project-label hidden">Project label</span>
 					</a>
 				</li>
 				<li class="next">
-					<a href="">
+					<a href="hoffman.html">
 						<span class="nav-direction">next &raquo;</span>
 						<span class="nav-project-title">Hoffman Paints</span>
 						<span class="nav-project-label">Packaging design</span>
@@ -71,55 +70,62 @@
 
 	<section class="container projects">
 		<ul>
+			<li class="project hidden">
+				<a href="dandelion-wine.html">
+					<img class="project-thumbnail" src="img/thumbnail-dandelion.jpg" alt="Project thumbnail: Dandelion Wine, book design">
+					<h4>Dandelion Wine</h4>
+					<p class="project-label">book design</p>
+				</a>
+			</li>
 			<li class="project">
-				<a href="#">
-					<img class="project-thumbnail" src="img/thumbnail-hoffman.jpg" alt="Image of packaging for Hoffman Paints">
+				<a href="hoffman.html">
+					<img class="project-thumbnail" src="img/thumbnail-hoffman.jpg" alt="Project thumbnail: Hoffman Paints, packaging design">
 					<h4>Hoffman Paints</h4>
 					<p class="project-label">packaging design</p>
 				</a>
 			</li>
 			<li class="project">
-				<a href="#">
-					<img class="project-thumbnail" src="img/thumbnail-ludlow.jpg" alt="Image of packaging for Mrs. Ludlow's Tea">
+				<a href="ludlow.html">
+					<img class="project-thumbnail" src="img/thumbnail-ludlow.jpg" alt="Project thumbnail: Mrs. Ludlow's Tea, web design">
 					<h4>Mrs. Ludlow's Tea</h4>
 					<p class="project-label">packaging design</p>
 				</a>
 			</li>
 			<li class="project">
-				<a href="#">
-					<img class="project-thumbnail" src="img/thumbnail-tea-cozy.jpg" alt="Image of identity suite for Tea Cozy">
+				<a href="tea-cozy.html">
+					<img class="project-thumbnail" src="img/thumbnail-tea-cozy.jpg" alt="Project thumbnail: Tea Cozy, identity">
 					<h4>Tea Cozy</h4>
 					<p class="project-label">identity</p>
 				</a>
 			</li>
 			<li class="project">
-				<a href="#">
-					<img class="project-thumbnail" src="img/thumbnail-penair.jpg" alt="Image of identity suite for Pen Air">
-					<h4>Pen Air</h4>
+				<a href="penair.html">
+					<img class="project-thumbnail" src="img/thumbnail-penair.jpg" alt="Project thumbnail: PenAir, identity">
+					<h4>PenAir</h4>
 					<p class="project-label">identity</p>
 				</a>
 			</li>
 			<li class="project">
-				<a href="#">
-					<img class="project-thumbnail" src="img/thumbnail-northwest-passage.jpg" alt="Image of Northwest Passage website">
+				<a href="northwest-passage.html">
+					<img class="project-thumbnail" src="img/thumbnail-northwest-passage.jpg" alt="Project thumbnail: Northwest Passage, web design">
 					<h4>Northwest Passage</h4>
 					<p class="project-label">web</p>
 				</a>
 			</li>
 			<li class="project">
-				<a href="#">
-					<img class="project-thumbnail" src="img/thumbnail-ivo.jpg" alt="Image of Ivo Stoev's website">
+				<a href="ivo-stoev.html">
+					<img class="project-thumbnail" src="img/thumbnail-ivo.jpg" alt="Project thumbnail: Ivo Stoev, identity and web design">
 					<h4>Ivo Stoev</h4>
 					<p class="project-label">identity, web</p>
 				</a>
 			</li>
 			<li class="project">
-				<a href="#">
-					<img class="project-thumbnail" src="img/thumbnail-boast.jpg" alt="">
+				<a href="boast-app.html">
+					<img class="project-thumbnail" src="img/thumbnail-boast.jpg" alt="Project thumbnail: Boast, UI/UX design">
 					<h4>Boast App</h4>
-					<p class="project-label">ui/ux</p>
+					<p class="project-label">UI/UX</p>
 				</a>
-			</li>
+			</li>		
 		</ul>		
 	</section>
 	<footer class="container">

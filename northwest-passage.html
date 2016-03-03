@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Nevena Stoeva | Portfolio</title>
+	<title>Nevena Stoeva | Northwest Passage</title>
 	<link rel="icon" href="img/favicon.png" />
-	<meta name="description" content="Portfolio of Nevena Stoeva, Seattle-based UI/UX/Visual/Graphic Designer" />
-	<meta name="keywords" content="portfolio, UI designer, UX designer, user interface designer, visual designer, graphic designer"/>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic' rel='stylesheet' type='text/css'>
 
 	<link href='https://fonts.googleapis.com/css?family=Amiri:400,400italic,700,700italic|Crimson+Text:400,400italic,600,600italic,700,700italic|Droid+Serif:400,400italic,700,700italic|Libre+Baskerville:400,400italic,700|PT+Serif:400,400italic,700,700italic|Radley:400,400italic|Rosarivo:400,400italic' rel='stylesheet' type='text/css'>
-	
+
 	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
 	<link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 	<!-- Why hello there, thank you for taking a look.  -->
-		<div class="container-fluid main-nav">
-			<header class="container">
-			<a href="index.html">	
-				<img src="img/nevena-logo.svg" alt="Nevena Stoeva logo" class="logo">
-				<div>
-					<h1>Nevena Stoeva</h1>
-					<h2>UI <span class="orange">&bullet;</span> UX <span class="orange">&bullet;</span> Visual <span class="orange">&bullet;</span> Graphic Designer</h2>
-				</div>
-			</a>
-			</header>
+	<div class="container-fluid main-nav" id="top">
+		<header class="container">
+		<a href="index.html">	
+			<img src="img/nevena-logo.svg" alt="Nevena Stoeva logo" class="logo">
+			<div>
+				<h1>Nevena Stoeva</h1>
+				<h2>UI <span class="orange">&bullet;</span> UX <span class="orange">&bullet;</span> Visual <span class="orange">&bullet;</span> Graphic Designer</h2>
+			</div>
+		</a>
+		</header>
+	</div>
+
+	<section class="container project-summary">
+		<h3>Northwest Passage</h3>
+		<h4>Web Design</h4>
+		<section>
+			<h5>Challenge</h5>
+			<p>Northwest Passage is an Arts and Culture online magazine focused on the cultural life in the Pacific Northwest, namely Washington, Oregon and British Columbia. It aims to provide reviews, commentary and listings/event info for a broad contemporary art scene. The members of its diverse audience need to easily find their way though the vast amount of topics the magazine covers and stay informed of current events in their own state while having an easy access to see what's happening in the other two.</p>
+		</section>
+		<section>
+			<h5>Solution</h5>
+			<p>All the topics that the owners requested to be included were organized though card-sorting and laid out in a two-tier navigation menu. The front page highlights and combines the most important sections. Each region is easily recognized through a distinctive highlight color and region-specific information is loaded while the simple, grid based layout remains consistent. <a href="http://nevenastoeva.com/nwpassage/">view site</a></p>
+		</section>
+		<div class="project-gallery">
+			<img src="img/northwest-passage-1.jpg" alt="Northwest Passage - Washington homepage">
+			<img src="img/northwest-passage-2.jpg" alt="Northwest Passage - Oregon homepage">
 		</div>
-
-
-	<section class="container summary">
-		<h3>Hi, I'm Nevena and I sometimes think too much.</h3>
-		<p>I'm a Seattle-based multidisciplinary designer. I'm just as excited about simplifying user workflows and alieving pain points as I am about playing around with any recent HTML and CSS developments.</p>
-		<p>Last seen at <a href="http://zantler.com/" target="_blank">Zantler</a> as UI/UX designer for the web-based e-commerce app <a href="http://shoppost.com/" target="_blank.">Shoppost</a>. <a href="http://seattlecentralcreativeacademy.com/">Seattle Central Creative Academy</a> graduate.</p>
-		<p>Recent work will be up shortly. <br/> 
-		   Select school and personal work below.</p>
+		<nav class="projects-navigation">
+			<ul>
+				<li class="previous">
+					<a href="penair.html">
+						<span class="nav-direction">&laquo; previous</span>
+						<span class="nav-project-title">PenAir</span>
+						<span class="nav-project-label">Identity</span>
+					</a>
+				</li>
+				<li class="next">
+					<a href="ivo-stoev.html">
+						<span class="nav-direction">next &raquo;</span>
+						<span class="nav-project-title">Ivo Stoev</span>
+						<span class="nav-project-label">Identity/Web design</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
 	</section>
 
 	<section class="container projects">
@@ -74,7 +98,7 @@
 					<p class="project-label">identity</p>
 				</a>
 			</li>
-			<li class="project">
+			<li class="project hidden">
 				<a href="northwest-passage.html">
 					<img class="project-thumbnail" src="img/thumbnail-northwest-passage.jpg" alt="Project thumbnail: Northwest Passage, web design">
 					<h4>Northwest Passage</h4>

@@ -1,40 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Nevena Stoeva | Portfolio</title>
+	<title>Nevena Stoeva | PenAir</title>
 	<link rel="icon" href="img/favicon.png" />
-	<meta name="description" content="Portfolio of Nevena Stoeva, Seattle-based UI/UX/Visual/Graphic Designer" />
-	<meta name="keywords" content="portfolio, UI designer, UX designer, user interface designer, visual designer, graphic designer"/>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic' rel='stylesheet' type='text/css'>
 
 	<link href='https://fonts.googleapis.com/css?family=Amiri:400,400italic,700,700italic|Crimson+Text:400,400italic,600,600italic,700,700italic|Droid+Serif:400,400italic,700,700italic|Libre+Baskerville:400,400italic,700|PT+Serif:400,400italic,700,700italic|Radley:400,400italic|Rosarivo:400,400italic' rel='stylesheet' type='text/css'>
-	
+
 	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
 	<link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 	<!-- Why hello there, thank you for taking a look.  -->
-		<div class="container-fluid main-nav">
-			<header class="container">
-			<a href="index.html">	
-				<img src="img/nevena-logo.svg" alt="Nevena Stoeva logo" class="logo">
-				<div>
-					<h1>Nevena Stoeva</h1>
-					<h2>UI <span class="orange">&bullet;</span> UX <span class="orange">&bullet;</span> Visual <span class="orange">&bullet;</span> Graphic Designer</h2>
-				</div>
-			</a>
-			</header>
+	<div class="container-fluid main-nav" id="top">
+		<header class="container">
+		<a href="index.html">	
+			<img src="img/nevena-logo.svg" alt="Nevena Stoeva logo" class="logo">
+			<div>
+				<h1>Nevena Stoeva</h1>
+				<h2>UI <span class="orange">&bullet;</span> UX <span class="orange">&bullet;</span> Visual <span class="orange">&bullet;</span> Graphic Designer</h2>
+			</div>
+		</a>
+		</header>
+	</div>
+
+	<section class="container project-summary">
+		<h3>PenAir</h3>
+		<h4>Identity</h4>
+		<section>
+			<h5>Challenge</h5>
+			<p>PenAir is one of the oldest and most reliable Alaskan commuter airlines and, until 2010, it was also the largest. After the merge of several smaller airlines into what is now Era Alaska, PenAir is now second largest. With Era being featured on Discovery's Flying Wild Alaska, PenAir noticed decline in popularity and decided that they needed to update their brand identity and make a bold statement about their position on the market.</p>
+		</section>
+		<section>
+			<h5>Solution</h5>
+			<p>The proposed redesign began with a major revision of the logo - distilling the class and reliability of the company and the freedom they provide with their flights and combining them into a memorable mark. A graphic standarts manual was drafted to outline the new identity of the brand and its application in business cards, stationery, air-crafts, luggage tags, tickets and other ephemera.</p>
+		</section>
+		<div class="project-gallery">
+			<img src="img/penair-1.jpg" alt="PenAir graphic standards manual cover">
+			<img src="img/penair-2.jpg" alt="PenAir pages of graphic standards manual">
+			<img src="img/penair-3.jpg" alt="PenAir envelope, business cards and graphic standards manual">
+			<img src="img/penair-4.jpg" alt="PenAir business cards">
+			<img src="img/penair-5.jpg" alt="PenAir incorrect logo treatment in graphic standards manual">
+			<img src="img/penair-6.jpg" alt="PenAir ephemera in graphic standards manual">
+			<img src="img/penair-7.jpg" alt="PenAir boarding passses and luggage tags">
 		</div>
-
-
-	<section class="container summary">
-		<h3>Hi, I'm Nevena and I sometimes think too much.</h3>
-		<p>I'm a Seattle-based multidisciplinary designer. I'm just as excited about simplifying user workflows and alieving pain points as I am about playing around with any recent HTML and CSS developments.</p>
-		<p>Last seen at <a href="http://zantler.com/" target="_blank">Zantler</a> as UI/UX designer for the web-based e-commerce app <a href="http://shoppost.com/" target="_blank.">Shoppost</a>. <a href="http://seattlecentralcreativeacademy.com/">Seattle Central Creative Academy</a> graduate.</p>
-		<p>Recent work will be up shortly. <br/> 
-		   Select school and personal work below.</p>
+		<nav class="projects-navigation">
+			<ul>
+				<li class="previous">
+					<a href="tea-cozy.html">
+						<span class="nav-direction">&laquo; previous</span>
+						<span class="nav-project-title">Tea Cozy</span>
+						<span class="nav-project-label">Identity</span>
+					</a>
+				</li>
+				<li class="next">
+					<a href="northwest-passage.html">
+						<span class="nav-direction">next &raquo;</span>
+						<span class="nav-project-title">Northwest Passage</span>
+						<span class="nav-project-label">Web design</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
 	</section>
 
 	<section class="container projects">
@@ -67,7 +96,7 @@
 					<p class="project-label">identity</p>
 				</a>
 			</li>
-			<li class="project">
+			<li class="project hidden">
 				<a href="penair.html">
 					<img class="project-thumbnail" src="img/thumbnail-penair.jpg" alt="Project thumbnail: PenAir, identity">
 					<h4>PenAir</h4>

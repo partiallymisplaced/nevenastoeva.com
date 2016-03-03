@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Nevena Stoeva | Portfolio</title>
+	<title>Nevena Stoeva | Boast</title>
 	<link rel="icon" href="img/favicon.png" />
-	<meta name="description" content="Portfolio of Nevena Stoeva, Seattle-based UI/UX/Visual/Graphic Designer" />
-	<meta name="keywords" content="portfolio, UI designer, UX designer, user interface designer, visual designer, graphic designer"/>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic' rel='stylesheet' type='text/css'>
 
 	<link href='https://fonts.googleapis.com/css?family=Amiri:400,400italic,700,700italic|Crimson+Text:400,400italic,600,600italic,700,700italic|Droid+Serif:400,400italic,700,700italic|Libre+Baskerville:400,400italic,700|PT+Serif:400,400italic,700,700italic|Radley:400,400italic|Rosarivo:400,400italic' rel='stylesheet' type='text/css'>
-	
+
 	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
 	<link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 	<!-- Why hello there, thank you for taking a look.  -->
-		<div class="container-fluid main-nav">
-			<header class="container">
-			<a href="index.html">	
-				<img src="img/nevena-logo.svg" alt="Nevena Stoeva logo" class="logo">
-				<div>
-					<h1>Nevena Stoeva</h1>
-					<h2>UI <span class="orange">&bullet;</span> UX <span class="orange">&bullet;</span> Visual <span class="orange">&bullet;</span> Graphic Designer</h2>
-				</div>
-			</a>
-			</header>
+	<div class="container-fluid main-nav" id="top">
+		<header class="container">
+		<a href="index.html">	
+			<img src="img/nevena-logo.svg" alt="Nevena Stoeva logo" class="logo">
+			<div>
+				<h1>Nevena Stoeva</h1>
+				<h2>UI <span class="orange">&bullet;</span> UX <span class="orange">&bullet;</span> Visual <span class="orange">&bullet;</span> Graphic Designer</h2>
+			</div>
+		</a>
+		</header>
+	</div>
+
+	<section class="container project-summary">
+		<h3>Boast App</h3>
+		<h4>UI/UX Design</h4>
+		<section>
+			<h5>Challenge</h5>
+			<p>Boast is a new iPhone app that makes it easy for you to share your recent purchases with your friends. Scan the barcode of the pair of shoes you just got, and you're two steps away from letting everyone you know how excited you are about your purchase. And if you decide to let the app use your current location, you'll get access to special offers by nearby businesses.</p>
+		</section>
+		<section>
+			<h5>Solution</h5>
+			<p>Together with Joe Brokken, we researched the personality and habits of our potential users and worked to come up with an solution that is fun, simple and easy to navigate. We evaluated the workflow and came up with a walktrough covering several user scenarios. The documentation we compiled is available <a href="files/boast-web.pdf">here</a>.</p>
+		</section>
+		<div class="project-gallery">
+			<img src="img/boast-app-1.jpg" alt="Boast App Screens">
+			<img src="img/boast-app-2.jpg" alt="Boast App home state - sketch and mockup">
+			<img src="img/boast-app-3.jpg" alt="Boast App barcode scanning state - sketch and mockup">
+			<img src="img/boast-app-4.jpg" alt="Boast App scanned item located state - sketch and mockup">
 		</div>
-
-
-	<section class="container summary">
-		<h3>Hi, I'm Nevena and I sometimes think too much.</h3>
-		<p>I'm a Seattle-based multidisciplinary designer. I'm just as excited about simplifying user workflows and alieving pain points as I am about playing around with any recent HTML and CSS developments.</p>
-		<p>Last seen at <a href="http://zantler.com/" target="_blank">Zantler</a> as UI/UX designer for the web-based e-commerce app <a href="http://shoppost.com/" target="_blank.">Shoppost</a>. <a href="http://seattlecentralcreativeacademy.com/">Seattle Central Creative Academy</a> graduate.</p>
-		<p>Recent work will be up shortly. <br/> 
-		   Select school and personal work below.</p>
+		<nav class="projects-navigation">
+			<ul>
+				<li class="previous">
+					<a href="ivo-stoev.html">
+						<span class="nav-direction">&laquo; previous</span>
+						<span class="nav-project-title">Ivo Stoev</span>
+						<span class="nav-project-label">Identity/Web design</span>
+					</a>
+				</li>
+				<li class="next">
+					<a href="penair.html">
+						<span class="nav-direction hidden">next &raquo;</span>
+						<span class="nav-project-title hidden">Project Title</span>
+						<span class="nav-project-label hidden">Project Label</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
 	</section>
 
 	<section class="container projects">
@@ -88,7 +114,7 @@
 					<p class="project-label">identity, web</p>
 				</a>
 			</li>
-			<li class="project">
+			<li class="project hidden">
 				<a href="boast-app.html">
 					<img class="project-thumbnail" src="img/thumbnail-boast.jpg" alt="Project thumbnail: Boast, UI/UX design">
 					<h4>Boast App</h4>
