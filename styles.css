@@ -1,13 +1,9 @@
 /*
 font-family: 'Amiri', serif;
 font-family: 'Crimson Text', serif;
-font-family: 'Droid Serif', serif;
-font-family: 'Libre Baskerville', serif;
-font-family: 'PT Serif', serif;
-font-family: 'Radley', serif;
-font-family: 'Rosarivo', serif;
 */
 
+/*global*/
 /** {
 	background-color: rgba(255,0,0,0.1);
 }*/
@@ -21,20 +17,25 @@ body {
 html, body {
   margin:0;
 }
+img {
+	display: block;
+}
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 }
-
+::selection {
+	color: #FFF;
+	background-color: #E4701E;
+}
 .hidden {
 	display: none;
 }
-
 .container { 
 	display: flex; 
 	width: auto; 
 	max-width: 54em;
 	margin: 0 auto; 
-	padding: 1em 0;
+	padding: 0;
 	flex-wrap: wrap;
 }
 .container-fluid {
@@ -42,6 +43,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main-nav {
 	border-bottom: 1px dotted #CCC;
+}
+.logo {
+	margin: 0 1em 0 0;
+	height: 3em;
+	width: 3em;
 }
 header.container {
 	max-width: 59em;
@@ -67,20 +73,12 @@ header h2 {
 header h2 span {
 	color: #E4701E;
 }
-.logo {
-	margin: 0 1em 0 0;
-	height: 3em;
-	width: 3em;
-}
-.summary h3, .summary p {
-	padding: 0 1em;
-}
 h3 {
 	font-size: 1.5em;
 	width: 100%;
 }
 p { 
-	font-family: 'Amiri', Georgia, sans-serif; font-weight: 300; 
+	font-family: 'Crimson Text', Georgia, sans-serif; font-weight: 300; 
 	color: #333; 
 	font-size: 1.5em; 
 	line-height: 1.725em; 
@@ -95,6 +93,18 @@ a {
 a:hover {
 	color: #E4701E;
 }
+
+/*main summary*/
+
+.summary {
+	padding: 2em 0 1em;
+}
+.summary h3, .summary p {
+	padding: 0 1em;
+}
+
+/*project thumbnails*/
+
 .projects ul { 
 	display: flex; 
 	flex-flow: row wrap; 
@@ -129,7 +139,7 @@ img.project-thumbnail:hover {
 	margin: 1em 0 .25em 0; 
 }
 .project-label { 
-	font-size: 1em; 
+	font-size: 1.075em; 
 	font-style: italic; 
 	margin: 0; 
 	line-height: 1.5em;
@@ -137,14 +147,25 @@ img.project-thumbnail:hover {
 
 /*project-pages*/
 
+.project-image-main {
+	margin: 0 1.5em;
+	border: 1px solid rgba(0,0,0,.1); 
+	border-top: none;
+	max-height: 33.68em;
+	overflow: hidden;
+}
+.project-image-main img {
+	width: 100%; 
+	height: 100%;
+}
 .project-summary h3 {
-	font-family: 'Amiri', Georgia, sans-serif; 
+	font-family: 'Crimson Text', Georgia, sans-serif; 
 	font-weight: 700;
 	font-size: 2.5em;
 	line-height: 1.125em;
 	color: #333;
 	text-align: center; 
-	margin: 1em .625em 0;
+	margin: 2em .625em 0;
 }
 .project-summary h4 {
 	text-transform: uppercase;
@@ -176,7 +197,7 @@ img.project-thumbnail:hover {
 	margin-top: 1.5em;
 }
 nav.projects-navigation {
-	padding: 1.5em;
+	padding: 3em 1.5em;
 	width: 100%;
 }
 .projects-navigation ul {
@@ -187,47 +208,66 @@ nav.projects-navigation {
 	justify-content: space-between; 
 }
 .projects-navigation ul li {
-
+	max-width: 50%;
 }
 .projects-navigation a {
 	border-bottom: none;
 	display: flex;
 	flex-flow: column nowrap;
 }
-.projects-navigation ul li a span {
-
-}
 .next {
 	text-align: right;
 } 
 .nav-direction {
 	font-size: .875em; 
-	min-width: 17.5em;
+	max-width: 17em;
 	border-bottom: 1px dotted #CCC;
 	padding-bottom: .75em;
 }
 .nav-project-title {
-	font-family: 'Amiri', Georgia, sans-serif; 
+	font-family: 'Crimson Text', Georgia, sans-serif; 
 	font-size: 1.313em;
+	line-height: 1.325em;
 	color: #333;
-	padding-top: .325em; 
-	margin: 0 .5em;
+	padding: .5em; 
 }
 .nav-project-label {
 	font-size: .75em; 
 	text-transform: uppercase;
 	color: #999;
-	margin: 0 .875em;
+	padding: 0 1em;
 }
 
+/*footer*/
+
+footer a {
+	width: 100%;
+	color:#AAA;
+	text-align: center;
+	padding: 1.5em;
+	margin: 1.5em auto 0;
+	border-top: 1px dotted #CCC; 
+	border-bottom: none;
+}
+footer a:hover {
+	color:#999;
+}
+
+/*@media*/
+
 @media (min-width: 15em) and (max-width: 53em) {
-	.project {
-		width: calc(50% - 3em); 
+	.project:nth-child(odd) {
+		width: calc(50% - 2.25em);
+		margin: 1.5em 0.75em 0 1.5em; 
+	}
+	.project:nth-child(even) {
+		width: calc(50% - 2.25em);
+		margin: 1.5em 1.5em 0 0.75em; 
+	}
+	.project-image-main {
+		margin: 0;
 	}
 	.project-summary section {
 		width: calc(100% - 3em);
-	}
-	.projects-navigation ul {
-		flex-flow: column;
 	}
 }
